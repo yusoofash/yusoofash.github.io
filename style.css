@@ -1,0 +1,125 @@
+/* 
+1. Body related styles & theme
+2. Header Styles
+3. Home Products Style
+4. Product Detail Style
+5. Utility Classes
+6. Misc
+*/
+
+/* 1. Body related styles & theme */
+#app {
+    margin: 3rem auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+main {
+    position: relative;
+}
+
+/* 2. Header Styles */
+.social-links a {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo a, .social-links a {
+    color: unset;
+}
+
+.social-links a:hover, .header-logo a {
+    text-decoration: none;
+}
+
+.social-links i {
+    background: black;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.social-links i:hover {
+    background: white;
+    color: black;
+}
+
+.banner-home img {
+    max-height: 350px;
+}
+
+/* 3. Home Products Style */
+.beer-product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.beer-product:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.beer-product img {
+    max-height: 150px;
+}
+
+/* 4. Product Detail Style */
+.beer-detail-page .detail-pic {
+    max-height: 400px;
+}
+
+/* 5. Utility Classes */
+.center-all-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.center-all-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* 6. Misc */
+
+
+
+/* 
+Media Queries
+1. Body related styles & theme
+2. Header Styles
+3. Home Beer List
+*/
+
+@media only screen and (max-width: 768px) {
+    /* 1. Body related styles & theme */
+    #app {
+        margin: 0;
+    }
+
+    /* 2. Header Styles */
+    header {
+        flex-flow: wrap;
+    }
+    .header-logo, .social-links {
+        width: 100%;
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 15px;
+    }
+
+    /* 3. Home Beer List */
+    .main-content-title {
+        text-align: center;
+    }
+    .main-contents .row {
+        justify-content: center;
+    }
+}
