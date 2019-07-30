@@ -1,0 +1,83 @@
+:root {
+    --searchbar-btn-width: 50px;
+}
+body {
+    background: #e2e1e0;
+}
+#app {
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background: white;
+}
+
+header a, header a:hover {
+    color: unset;
+}
+header a:hover {
+    text-decoration: none;
+}
+.social-links i {
+    margin: auto 5px;
+    font-size: 1.6rem;
+}
+header .header-logo {
+    position: relative;
+    top: -10px;
+}
+header .search-box {
+    max-width: 300px;
+    height: 100%;
+}
+header .search-box input {
+    border-radius: 0;
+    padding-right: var(--searchbar-btn-width);
+}
+header .search-box .fa-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--searchbar-btn-width);
+}
+
+
+
+.image-block {
+    position: relative;
+}
+.image-block p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    margin: 0;
+    padding: 7px;
+}
+
+
+.center-all-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.center-all-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #app {
+        margin: 0;
+        padding: 0;
+    }
+}
