@@ -34,7 +34,6 @@ const HomeComponent = Vue.component('home', {
 
             else {
                 this.memeArr = this.originMemeArr.filter(val => {
-                    console.log(val.name.toLowerCase(), cur.toLowerCase());
                     return val.name.toLowerCase().includes(cur.toLowerCase())
                 });
             }
