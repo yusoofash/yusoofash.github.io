@@ -60,12 +60,34 @@ h1.arrow {
   right: 0;
   padding: 2.3rem;
   z-index: 999;
-  /* border-bottom: 1px solid var(--primary); */
 }
 
 .my-nav .fa-bars {
   font-size: 2.3rem;
   color: var(--primary-container);
+}
+
+.my-nav nav {
+  display: flex;
+  position: absolute;
+  transition: transform 0.3s, background-color 3s, border 3s;
+  transform: translateX(100%);
+  right: 20px;
+}
+
+.my-nav.open-nav {
+  border: 2px solid var(--primary);
+  background-color: var(--on-primary);
+}
+
+.my-nav.open-nav nav {
+  transform: translateX(0);
+}
+
+.my-nav nav a {
+  margin: 0px 20px;
+  font-size: 1.4rem;
+  color: var(--primary);
 }
 
 /* 4. banner section */
@@ -214,8 +236,23 @@ h1.arrow {
     font-size: 2.4rem;
     line-height: 3rem;
   }
-  
+
   .intro-container p {
     font-size: 1.2rem;
+  }
+
+  .my-nav {
+    flex-flow: column;
+  }
+
+  .my-nav.open-nav nav {
+    flex-flow: column;
+    position: relative;
+    right: 0;
+    margin: auto;
+  }
+
+  .my-nav.open-nav nav a {
+    margin-top: 24px;
   }
 }

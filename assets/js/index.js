@@ -8,7 +8,7 @@ new TypeIt("#heading-intro", {
 }).go();
 
 // handle particlesJS
-particlesJS('particles-js',
+particlesJS('home',
     {
         "particles": {
             "number": {
@@ -168,4 +168,15 @@ const observer = new IntersectionObserver(function (entries) {
 
 skills.forEach(function (box) {
     observer.observe(box);
+});
+
+
+// handle menu click
+document.querySelector('#menu-icon').addEventListener('click', function () {
+    const header = document.querySelector('.my-nav');
+    if (header.classList.contains('open-nav')) {
+        header.classList.remove('open-nav');
+    } else {
+        header.classList.add('open-nav');
+    }
 });
