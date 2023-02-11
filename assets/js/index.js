@@ -12,19 +12,19 @@ particlesJS('home',
     {
         "particles": {
             "number": {
-                "value": 70,
+                "value": 80,
                 "density": {
-                    "enable": true,
-                    "value_area": 800
+                    "enable": false,
+                    "value_area": 1000
                 }
             },
             "color": {
                 "value": "#0b3d91"
             },
             "shape": {
-                "type": "circle",
+                "type": "triangle",
                 "stroke": {
-                    "width": 0,
+                    "width": 0.2,
                     "color": "#000000"
                 },
                 "polygon": {
@@ -158,10 +158,17 @@ const animation = anime({
     },
     duration: 1000
 });
+
+let animationDone = false;
+
 const observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
         if (entry.isIntersecting) {
             animation.play();
+
+            skills.forEach(function (box) {
+                observer.unobserve(box);
+            });
         }
     });
 });
@@ -172,11 +179,22 @@ skills.forEach(function (box) {
 
 
 // handle menu click
-document.querySelector('#menu-icon').addEventListener('click', function () {
+document.querySelector('.my-nav').addEventListener('click', function (e) {
     const header = document.querySelector('.my-nav');
-    if (header.classList.contains('open-nav')) {
-        header.classList.remove('open-nav');
-    } else {
-        header.classList.add('open-nav');
+
+    const isMobile = window.innerWidth < 600;
+
+    if (isMobile) {
+        if (e.target.tagName === 'A' || (e.target.parentElement.tagName === 'A' && e.target.tagName === 'I')) {
+            header.classList.remove('open-nav');
+        }
+    }
+
+    if (e.target.tagName === 'BUTTON' || (e.target.parentElement.tagName === 'BUTTON' && e.target.tagName === 'I')) {
+        if (header.classList.contains('open-nav')) {
+            header.classList.remove('open-nav');
+        } else {
+            header.classList.add('open-nav');
+        }
     }
 });
