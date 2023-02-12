@@ -206,3 +206,33 @@ document.querySelector('.my-nav').addEventListener('click', function (e) {
         }
     }
 });
+
+// scroll to top
+const btn = document.createElement("BUTTON");
+btn.innerHTML = "⬆️";
+btn.style.display = "none";
+btn.style.backgroundColor = "transparent";
+btn.style.fontSize = '2rem';
+btn.style.border = "none";
+btn.style.outline = "none";
+btn.style.cursor = "pointer";
+btn.style.position = "fixed";
+btn.style.bottom = "20px";
+btn.style.right = "20px";
+btn.style.zIndex = "100";
+document.body.appendChild(btn);
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+// Scroll to the top of the page when the button is clicked
+btn.addEventListener("click", function () {
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+    doScrolling(document.getElementById('home'));
+});

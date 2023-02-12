@@ -127,7 +127,7 @@ h1.arrow {
 
 .see-more-btn {
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: calc(50% - 50px);
   margin-top: 8rem;
   color: var(--primary);
@@ -229,7 +229,7 @@ h1.arrow {
   }
 
   .intro-container p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .my-nav {
