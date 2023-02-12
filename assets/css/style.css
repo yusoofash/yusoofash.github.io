@@ -10,7 +10,7 @@
 :root {
   --primary: #0b3d91;
   --on-primary: #ffffff;
-  --primary-container: #0b3d91;
+  --primary-container: #1658c9;
   --on-primary-container: #e5e5e5;
 }
 
@@ -24,6 +24,10 @@ body {
   color: var(--primary) !important;
 }
 
+.text-onprimary {
+  color: var(--on-primary) !important;
+}
+
 .btn-primary {
   background-color: var(--primary-container) !important;
   color: var(--on-primary-container) !important;
@@ -34,7 +38,7 @@ body {
 }
 
 .mb-10 {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 h1.arrow {
@@ -58,7 +62,7 @@ h1.arrow {
   position: fixed;
   left: 0;
   right: 0;
-  padding: 2.3rem;
+  padding: 2rem;
   z-index: 999;
 }
 
@@ -86,7 +90,7 @@ h1.arrow {
 
 .my-nav nav a {
   margin: 0px 20px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--primary);
 }
 
@@ -123,7 +127,7 @@ h1.arrow {
 
 .see-more-btn {
   position: absolute;
-  bottom: 16%;
+  bottom: 10%;
   left: calc(50% - 50px);
   margin-top: 8rem;
   color: var(--primary);
@@ -139,15 +143,6 @@ h1.arrow {
 }
 
 /* skill section */
-#skill-section {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/pattern.png");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
 #skill-section .card {
   padding: 12px;
   margin-bottom: 28px;
@@ -179,15 +174,11 @@ h1.arrow {
   color: var(--primary);
   font-size: 2rem;
   margin: 0 0.7rem;
-  border: 2px solid var(--primary);
-  padding: 0.5rem 1rem;
-  border-radius: 25%;
   transition: all 0.3s ease-in-out;
 }
 
 .footer-icon-link:hover {
   transform: scale(1.2);
-  box-shadow: 0px 0px 7px #333;
 }
 
 .footer-icon-link i {
@@ -199,19 +190,15 @@ h1.arrow {
 
 .footer-twitter-icon:hover {
   color: #1d9bf0;
-  border-color: #1d9bf0;
 }
 .footer-github-icon:hover {
   color: #181717;
-  border-color: #181717;
 }
 .footer-linkedin-icon:hover {
   color: #0077b5;
-  border-color: #0077b5;
 }
 .footer-instagram-icon:hover {
   color: #e4405f;
-  border-color: #e4405f;
 }
 
 /* media queries */
@@ -225,6 +212,10 @@ h1.arrow {
     z-index: 1;
   }
 
+  .mb-10 {
+    margin-bottom: 0.4rem;
+  }
+
   .intro-container {
     top: 50%;
     left: 10px;
@@ -233,12 +224,12 @@ h1.arrow {
   }
 
   .intro-container h1 {
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 
   .intro-container p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .my-nav {
