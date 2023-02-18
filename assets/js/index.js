@@ -8,13 +8,12 @@ new TypeIt("#heading-intro", {
 }).go();
 
 // handle particlesJS
-
 function generateParticles(isMobile) {
     particlesJS('home',
         {
             "particles": {
                 "number": {
-                    "value": isMobile ? 20 : 80,
+                    "value": isMobile ? 20 : 60,
                     "density": {
                         "enable": false,
                         "value_area": 1000
@@ -56,13 +55,13 @@ function generateParticles(isMobile) {
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#2E2E2E",
-                    "opacity": 0.4,
+                    "color": "#0b3d91",
+                    "opacity": 0.6,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": isMobile ? 1 : 3,
+                    "speed": isMobile ? 2 : 3,
                     "direction": "none",
                     "random": false,
                     "straight": false,
@@ -125,11 +124,7 @@ function generateParticles(isMobile) {
 
     );
 }
-generateParticles(window.innerWidth < 600);
-
-window.addEventListener('resize', function () {
-    generateParticles(window.innerWidth < 600);
-});
+generateParticles(isMobile());
 
 // handle see more
 const seeMore = document.querySelector("#see-more");
@@ -190,9 +185,7 @@ skills.forEach(function (box) {
 document.querySelector('.my-nav').addEventListener('click', function (e) {
     const header = document.querySelector('.my-nav');
 
-    const isMobile = window.innerWidth < 600;
-
-    if (isMobile) {
+    if (isMobile()) {
         if (e.target.tagName === 'A' || (e.target.parentElement.tagName === 'A' && e.target.tagName === 'I')) {
             header.classList.remove('open-nav');
         }
@@ -232,7 +225,35 @@ window.onscroll = function () {
 
 // Scroll to the top of the page when the button is clicked
 btn.addEventListener("click", function () {
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
     doScrolling(document.getElementById('home'));
 });
+
+// hide the loader on page load
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'none';
+});
+
+// handle nav link click
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        const targetOffsetTop = targetSection.offsetTop;
+
+        const navHeight = document.querySelector('.my-nav nav').getBoundingClientRect().height;
+
+        window.scrollTo({
+            top: targetOffsetTop + (isMobile() ? 0 : -navHeight),
+            behavior: 'smooth'
+        });
+    });
+});
+
+// utils
+function isMobile() {
+    return window.innerWidth < 600;
+}
