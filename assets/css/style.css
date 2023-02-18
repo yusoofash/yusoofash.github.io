@@ -96,7 +96,7 @@ h1.arrow {
 }
 
 /* 3. header */
-#menu-icon {
+.menu-bar-container {
   position: fixed;
   left: 0;
   right: 0;
@@ -120,14 +120,14 @@ h1.arrow {
   right: 0;
   left: 0;
   justify-content: flex-end;
-  border: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
   background-color: var(--on-primary);
   z-index: 3;
 }
 
 .my-nav.open-nav nav {
   transform: translateY(0);
-  padding: 2rem 0;
+  padding: 2rem 0.6rem;
 }
 
 .my-nav nav a {
