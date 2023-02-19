@@ -82,7 +82,7 @@ h1.arrow {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -40px;
+  margin-top: -100px;
   margin-left: -40px;
 }
 
@@ -99,13 +99,12 @@ h1.arrow {
 .menu-bar-container {
   position: fixed;
   left: 0;
-  right: 0;
   margin: 2rem;
   z-index: 999;
 }
 
 .my-nav nav {
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-out;
 }
 
 .my-nav .fa-bars {

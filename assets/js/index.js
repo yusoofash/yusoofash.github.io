@@ -124,7 +124,9 @@ function generateParticles(isMobile) {
 
     );
 }
-generateParticles(isMobile());
+window.addEventListener('load', function () {
+    generateParticles(isMobile());
+});
 
 // handle see more
 const seeMore = document.querySelector("#see-more");
