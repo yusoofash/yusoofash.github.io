@@ -16,7 +16,7 @@ function generateParticles() {
         },
         "particles": {
             "number": {
-                "value": 80,
+                "value": 60,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -26,10 +26,10 @@ function generateParticles() {
                 "value": "#0b3d91"
             },
             "shape": {
-                "type": "circle",
+                "type": "triangle",
                 "stroke": {
-                    "width": 0,
-                    "color": "#1658c9"
+                    "width": 0.8,
+                    "color": "#000000",
                 },
                 "polygon": {
                     "nb_sides": 5
@@ -59,12 +59,12 @@ function generateParticles() {
                 "enable": true,
                 "distance": 150,
                 "color": "#1658c9",
-                "opacity": 0.4,
+                "opacity": 0.8,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 6,
+                "speed": 4,
                 "direction": "none",
                 "random": false,
                 "straight": false,
