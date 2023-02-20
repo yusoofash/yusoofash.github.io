@@ -8,7 +8,7 @@ new TypeIt("#heading-intro", {
 }).go();
 
 // handle particlesJS
-function generateParticles() {
+function generateParticles(isMobile) {
     const particles = {
         "fullScreen": {
             enable: false,
@@ -85,7 +85,7 @@ function generateParticles() {
                     "mode": "repulse"
                 },
                 "onclick": {
-                    "enable": true,
+                    "enable": !isMobile,
                     "mode": "push"
                 },
                 "resize": true
@@ -122,7 +122,11 @@ function generateParticles() {
 }
 
 window.addEventListener('load', function () {
-    generateParticles();
+    generateParticles(isMobile());
+});
+
+window.addEventListener('resize', function () {
+    generateParticles(isMobile());
 });
 
 // handle see more
