@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yusoof - Portfolio</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fontawesome-free-5.6.3/fontawesome.all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +33,7 @@
 <body>
     <heading class="my-nav d-flex align-items-start justify-content-between">
         <div class="menu-bar-container">
-            <button class="btn btn-link" id="menu-icon">
+            <button class="btn btn-link" id="menu-icon" aria-label="Menu">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
         </div>
@@ -48,7 +67,7 @@
             <h1 class="mb-5 text-onprimary">My Works</h1>
 
             <div class="clearfix">
-                <img src="assets/images/blue-belt-grepper.png" width="250" src="Grepper stats"
+                <img src="assets/images/blue-belt-grepper.png" width="250" alt="Grepper stats"
                     class="float-md-left mb-4 mr-sm-4" />
 
                 <p class="text-onprimary">
@@ -68,79 +87,85 @@
                 <div class="card">
                     <img class="card-img-top" src="assets/images/top-10-food.png" alt="Top 10 food website">
                     <div class="card-body">
-                        <h5 class="card-title">Top 10 foods</h5>
-                        <p class="card-text">A personal website that I created to help people find the best food in
-                            their area, incorporating user-friendly search functionality and food
-                            recommendations.</p>
-                        <a href="https://top-10-food.vercel.app/" target="_blank" class="link">Check it out <i
-                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <h2 class="card-title">Top 10 foods</h5>
+                            <p class="card-text">A personal website that I created to help people find the best food in
+                                their area, incorporating user-friendly search functionality and food
+                                recommendations.</p>
+                            <a href="https://top-10-food.vercel.app/" target="_blank" class="link">Check it out <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card-img-top" src="assets/images/CardMoola-website.png" alt="CardMoola website">
                     <div class="card-body">
-                        <h5 class="card-title">CardMoola</h5>
-                        <p class="card-text">A team project I am currently involved in at Cydev, this website provides a
-                            convenient one-stop-shop for customers looking to purchase gift cards for a wide range of
-                            occasions. With over 250 options to choose from, Cardmoola offers a vast selection of
-                            options that cater to everyone's needs.</p>
-                        <a href="https://cardmoola.com" target="_blank" class="link">Check it out <i
-                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <h2 class="card-title">CardMoola</h5>
+                            <p class="card-text">A team project I am currently involved in at Cydev, this website
+                                provides a
+                                convenient one-stop-shop for customers looking to purchase gift cards for a wide range
+                                of
+                                occasions. With over 250 options to choose from, Cardmoola offers a vast selection of
+                                options that cater to everyone's needs.</p>
+                            <a href="https://cardmoola.com" target="_blank" class="link">Check it out <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Salon POS</h5>
-                        <p class="card-text">A custom point-of-sale system designed for salon owners to streamline their
-                            business operations and manage customer information.</p>
+                        <h2 class="card-title">Salon POS</h5>
+                            <p class="card-text">A custom point-of-sale system designed for salon owners to streamline
+                                their
+                                business operations and manage customer information.</p>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card-img-top" src="assets/images/brewery-website.png" alt="Brewery Website">
                     <div class="card-body">
-                        <h5 class="card-title">Brewery Website</h5>
-                        <p class="card-text">A simple project in VueJS that showcases my understanding of the framework,
-                            this website allows people to explore and learn about different brewery drinks.</p>
-                        <a href="./simple-brewery-vue/index.html" target="_blank" class="link">Check it out <i
-                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <h2 class="card-title">Brewery Website</h5>
+                            <p class="card-text">A simple project in VueJS that showcases my understanding of the
+                                framework,
+                                this website allows people to explore and learn about different brewery drinks.</p>
+                            <a href="./simple-brewery-vue/index.html" target="_blank" class="link">Check it out <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card-img-top" src="assets/images/adroit-pilot.jpeg" alt="Adroit Pilot">
                     <div class="card-body">
-                        <h5 class="card-title">Adroit Pilot</h5>
-                        <p class="card-text">A final year project that I developed while studying in college, which
-                            leverages machine learning to match job seekers with the best-fit companies based on
-                            their resume.</p>
+                        <h2 class="card-title">Adroit Pilot</h5>
+                            <p class="card-text">A final year project that I developed while studying in college, which
+                                leverages machine learning to match job seekers with the best-fit companies based on
+                                their resume.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="assets/images/everracer.png" alt="Everracer">
+                    <img class="card-img-top" src="assets/images/everracer.jpg" alt="Everracer">
                     <div class="card-body">
-                        <h5 class="card-title">Everracer</h5>
-                        <p class="card-text">An e-commerce platform I built as part of a small team at Pharoscion
-                            Global, offering a comprehensive selection of gaming and office chairs to customers in
-                            Australia.</p>
-                        <a href="https://www.everracer.com.au/" target="_blank" class="link">Check it out <i
-                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <h2 class="card-title">Everracer</h5>
+                            <p class="card-text">An e-commerce platform I built as part of a small team at Pharoscion
+                                Global, offering a comprehensive selection of gaming and office chairs to customers in
+                                Australia.</p>
+                            <a href="https://www.everracer.com.au/" target="_blank" class="link">Check it out <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="assets/images/atria-notification.png" alt="Atria Notifications">
+                    <img class="card-img-top" src="assets/images/atria-notification.jpg" alt="Atria Notifications">
                     <div class="card-body">
-                        <h5 class="card-title">Atria Notifications</h5>
-                        <p class="card-text">A collaborative project I completed with a senior engineer, this website
-                            helps students stay informed about upcoming events and notifications in my college.</p>
+                        <h2 class="card-title">Atria Notifications</h5>
+                            <p class="card-text">A collaborative project I completed with a senior engineer, this
+                                website
+                                helps students stay informed about upcoming events and notifications in my college.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="assets/images/meme-website.png" alt="Meme website">
+                    <img class="card-img-top" src="assets/images/meme-website.jpg" alt="Meme website">
                     <div class="card-body">
-                        <h5 class="card-title">Meme generator</h5>
-                        <p class="card-text">A fun project from my early learning days, this website generates humorous
-                            memes.</p>
-                        <a href="./simple-imagery-vue/index.html" target="_blank" class="link">Check it out <i
-                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <h2 class="card-title">Meme generator</h5>
+                            <p class="card-text">A fun project from my early learning days, this website generates
+                                humorous
+                                memes.</p>
+                            <a href="./simple-imagery-vue/index.html" target="_blank" class="link">Check it out <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -149,7 +174,8 @@
         </div>
 
         <div class="text-center mt-5 bg-light py-5 px-3">
-            <p class="text-primary resume-description">Take a closer look at my skills and experience by downloading my resume.</p>
+            <p class="text-primary resume-description">Take a closer look at my skills and experience by downloading my
+                resume.</p>
             <a href="assets/Yusoof Resume.pdf" download class="btn btn-primary" target="_blank">Download My Resume</a>
         </div>
     </section>
@@ -232,13 +258,13 @@
                         <img class="card-img-top" src="assets/images/success-poster.jpg"
                             alt="5 Simple Habits for Success blog">
                         <div class="card-body">
-                            <h5 class="card-title">5 Simple Habits for Success</h5>
-                            <p class="card-text">Five simple habits you can adopt to maximize your productivity and
-                                achieve
-                                success.</p>
-                            <a target="_blank"
-                                href="https://medium.com/@yusoofash/maximize-your-productivity-5-simple-habits-for-success-955cfd3c1db"
-                                class="btn btn-primary">Start Reading</a>
+                            <h2 class="card-title">5 Simple Habits for Success</h5>
+                                <p class="card-text">Five simple habits you can adopt to maximize your productivity and
+                                    achieve
+                                    success.</p>
+                                <a target="_blank"
+                                    href="https://medium.com/@yusoofash/maximize-your-productivity-5-simple-habits-for-success-955cfd3c1db"
+                                    class="btn btn-primary">Start Reading</a>
                         </div>
                     </div>
                 </div>
@@ -246,13 +272,14 @@
                     <div class="card h-100">
                         <img class="card-img-top" src="assets/images/stock-guide.png" alt="Stock market guide blog">
                         <div class="card-body">
-                            <h5 class="card-title">Beginners guide to trading or investing stocks</h5>
-                            <p class="card-text">Get started in the world of stock trading with this comprehensive guide
-                                for
-                                beginners. Learn the basics of investing and trading stocks.</p>
-                            <a target="_blank"
-                                href="https://yusoofash.wordpress.com/2022/12/03/beginners-guide-to-trading-or-investing-stocks/"
-                                class="btn btn-primary">Read My Guide</a>
+                            <h2 class="card-title">Beginners guide to trading or investing stocks</h5>
+                                <p class="card-text">Get started in the world of stock trading with this comprehensive
+                                    guide
+                                    for
+                                    beginners. Learn the basics of investing and trading stocks.</p>
+                                <a target="_blank"
+                                    href="https://yusoofash.wordpress.com/2022/12/03/beginners-guide-to-trading-or-investing-stocks/"
+                                    class="btn btn-primary">Read My Guide</a>
                         </div>
                     </div>
                 </div>
@@ -295,17 +322,19 @@
                         class="fas fa-external-link-alt ml-1"></i></a>
             </div>
 
-            <a target="_blank" href="https://github.com/yusoofash" class="footer-icon-link footer-github-icon">
+            <a target="_blank" href="https://github.com/yusoofash" aria-label="Visit my Github"
+                class="footer-icon-link footer-github-icon">
                 <i class="fab fa-github"></i>
             </a>
-            <a target="_blank" href="https://twitter.com/yusoof94953877" class="footer-icon-link footer-twitter-icon">
+            <a target="_blank" href="https://twitter.com/yusoof94953877" aria-label="Visit my Twitter"
+                class="footer-icon-link footer-twitter-icon">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a target="_blank" href="https://www.instagram.com/ali_yusoof/"
+            <a target="_blank" href="https://www.instagram.com/ali_yusoof/" aria-label="Visit my Instagram"
                 class="footer-icon-link footer-instagram-icon">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/yusoof-ali-b016b616b"
+            <a target="_blank" href="https://www.linkedin.com/in/yusoof-ali-b016b616b" aria-label="Visit my Linkedin"
                 class="footer-icon-link footer-linkedin-icon">
                 <i class="fab fa-linkedin"></i>
             </a>
@@ -316,6 +345,14 @@
     <div id="loader">
         <div id="loader-icon"></div>
     </div>
+
+    <script>
+        // hide the loader on page load
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+        });
+    </script>
 
     <script src="assets/js/typeit.js"></script>
     <script src="assets/js/tsparticles.bundle.min.js"></script>

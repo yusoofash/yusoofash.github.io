@@ -121,9 +121,7 @@ function generateParticles(isMobile) {
     tsParticles.load("home", particles);
 }
 
-window.addEventListener('load', function () {
-    generateParticles(isMobile());
-});
+generateParticles(isMobile());
 
 window.addEventListener('resize', function () {
     generateParticles(isMobile());
@@ -229,12 +227,6 @@ window.onscroll = function () {
 // Scroll to the top of the page when the button is clicked
 btn.addEventListener("click", function () {
     doScrolling(document.getElementById('home'));
-});
-
-// hide the loader on page load
-window.addEventListener('load', function () {
-    const loader = document.getElementById('loader');
-    loader.style.display = 'none';
 });
 
 // handle nav link click
