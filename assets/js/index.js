@@ -118,7 +118,7 @@ function generateParticles(isMobile) {
         "retina_detect": true
     };
 
-    tsParticles.load("home", particles);
+    tsParticles.load("banner", particles);
 }
 
 generateParticles(isMobile());
